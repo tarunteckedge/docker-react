@@ -1,0 +1,14 @@
+FROM node:lts-alpine
+
+WORKDIR /app
+
+COPY package.json .
+RUN npm install
+COPY . .
+
+CMD ["npm", "run", "start"]
+
+# docker build -t tarunsuneja/visits-web .
+# docker run -p 8080:8080 tarunsuneja/visits-web
+
+# docker run -it tarunsuneja/visits-web sh

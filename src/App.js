@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Nicely edited 5 <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React !!
         </a>
       </header>
     </div>
@@ -24,3 +24,5 @@ function App() {
 }
 
 export default App;
+
+// docker run -it -p 3000:3000 -v /app/node_modules -v /c/mydrive/work/tarunsuneja/learning/docker-kubernetes/04-frontend:/app -e CHOKIDAR_USEPOLLING=true 0eae46bb8d07
